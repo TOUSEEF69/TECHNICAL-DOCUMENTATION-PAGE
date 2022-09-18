@@ -1,0 +1,9 @@
+#navabar {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: gray;
+    }
+}
