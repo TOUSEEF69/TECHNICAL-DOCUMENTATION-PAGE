@@ -1,9 +1,64 @@
-#navabar {
-    width: 40%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    body {
-        background-color: gray;
+body {
+    position: relative;
+    color: #43434e;
+    background: #fff;
+    font-family: 'calibri';
+    line-height: 1.5;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    border-right: solid #ccc;
+    z-index: 2;
+}
+
+#navbar header {
+    color: #000;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: thin;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+#main-doc {
+    position: absolute;
+    margin: 0 0 310px 0;
+    padding: 20px;
+    margin: 0 0 110px 0;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+@media(max-width: 460px) {
+    #navbar {
+        width: 40%;
     }
 }
